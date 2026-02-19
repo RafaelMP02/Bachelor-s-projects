@@ -9,7 +9,7 @@
 	url = https://github.com/RafaelMP02/UCM-PC-prac_final.git
 [submodule "UCM-PL"]
 	path = UCM-PL
-	url = https://github.com/RafaelMP02/UCM-PL.git
+	url = https://github.com/RafaelMP02/UCM-PL
 [submodule "UCM-ProgEvolutiva"]
 	path = UCM-ProgEvolutiva
 	url = https://github.com/RafaelMP02/UCM-ProgEvolutiva.git
