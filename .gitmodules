@@ -1,24 +1,32 @@
 [submodule "UCM-TP1-SuperCars"]
 	path = UCM-TP1-SuperCars
 	url = https://github.com/RafaelMP02/UCM-TP1-SuperCars
+	branch = main
 [submodule "UCM-PC-pracs"]
 	path = UCM-PC-pracs
 	url = https://github.com/RafaelMP02/UCM-PC-pracs.git
+	branch = main
 [submodule "UCM-PC-prac_final"]
 	path = UCM-PC-prac_final
 	url = https://github.com/RafaelMP02/UCM-PC-prac_final.git
+	branch = main
 [submodule "UCM-PL"]
 	path = UCM-PL
 	url = https://github.com/RafaelMP02/UCM-PL
+	branch = main
 [submodule "UCM-ProgEvolutiva"]
 	path = UCM-ProgEvolutiva
 	url = https://github.com/RafaelMP02/UCM-ProgEvolutiva.git
+	branch = main
 [submodule "UCM-TFG"]
 	path = UCM-TFG
 	url = https://github.com/RafaelMP02/UCM-TFG.git
+	branch = main
 [submodule "UCM-IA2"]
 	path = UCM-IA2
 	url = https://github.com/RafaelMP02/UCM-IA2.git
+	branch = main
 [submodule "UCM-TP2-TrafficSimulator"]
 	path = UCM-TP2-TrafficSimulator
 	url = https://github.com/RafaelMP02/UCM-TP2-TrafficSimulator.git
+	branch = main
