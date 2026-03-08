@@ -2,14 +2,14 @@ name: Update Submodules
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Se ejecuta cada día a las 00:00 UTC
-  workflow_dispatch:      # Permite ejecutarlo manualmente desde la web
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # Importante para que la Action pueda hacer 'push'
+      contents: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -19,7 +19,12 @@ jobs:
 
       - name: Update submodules
         run: |
-          git submodule update --init --recursive --remote --merge
+          # Configuramos para que confíe en el directorio (evita errores de permisos de Git)
+          git config --global --add safe.directory '*'
+          
+          # Forzamos la actualización remota ignorando el historial local conflictivo
+          git submodule update --init --recursive --remote --no-fetch
+          git submodule foreach 'git fetch origin && git checkout main && git reset --hard origin/main'
 
       - name: Commit and push if changed
         run: |
